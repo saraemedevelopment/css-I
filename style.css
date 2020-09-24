@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --wrapper-width: 80rem;
+  /*--------------------- COLORS ---------------------*/
+  --primary-theme: #9aae04; /*VERDE*/
+  --second-theme: #d9d9d9; /*GRIS*/
+  --border-color: #777; /*GRIS OSCURO*/
+  /*--------------------- END COLORS ---------------------*/
+  /*--------------------- FONTS ---------------------*/
+  --font-primary: "verdana";
+  --base_font_size: 1rem;
+  --base_titles_size: 2rem;
+  --big_titles_size: 3rem;
+  /*--------------------- END FONTS ---------------------*/
+  /*--------------------- SPACING ---------------------*/
+  --base_spacing-size: 1rem; /*Margin y Padding*/
+  /*--------------------- END SPACING ---------------------*/
+}
+
+/*--------------------- GENERAL ---------------------*/
+
+body {
+  font-family: var(--font-primary);
+  align-self: center;
+}
+
+.section {
+  border-top: dotted var(--primary-theme) 1px;
+  margin: var(--base_spacing-size);
+  padding-top: var(--base_spacing-size);
+  padding-bottom: var(--base_spacing-size);
+}
+
+.main-title {
+  font-size: var(--big_titles_size);
+}
+
+.section-title {
+  font-size: var(--base_titles_size);
+}
+
+.text {
+  background-color: var(--second-theme);
+  margin-top: var(--base_spacing-size);
+  margin-right: var(--base_spacing-size);
+  padding: var(--base_spacing-size);
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+}
+
+.news-item-1 {
+  flex-grow: 1;
+  width: 25%;
+}
+
+.advertising {
+  padding: var(--base_spacing-size);
+  background-color: var(--second-theme);
+  border-left: 1px solid var(--primary-theme);
+}
+
+/*--------------------- END GENERAL ---------------------*/
+
+/*--------------------- WRAPPER ---------------------*/
+.wrapper {
+  width: var(--wrapper-width);
+  margin: 0 auto;
+}
+
+/*--------------------- END WRAPPER ---------------------*/
+
+/*--------------------- HEADER ---------------------*/
+.header {
+  background-color: var(--second-theme);
+}
+
+.header-wrap {
+  margin: 0 auto;
+  width: var(--wrapper-width);
+  padding: var(--base_spacing-size);
+}
+
+/*--------------------- END HEADER ---------------------*/
+
+/*--------------------- MENU -------------------*/
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: var(--base_spacing-size) 0;
+}
+
+.menu-item {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 15px;
+  background-color: white;
+}
+
+.menu-item:first-child {
+    background-image: linear-gradient(to bottom right, red, yellow);
+
+  }
+
+.menu-item:hover {
+  background-color: var(--primary-theme);
+}
+
+.link {
+  color: var(--primary-theme);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/*--------------------- END MENU -------------------*/
+
+/*--------------------- BODY BASE -------------------*/
+
+/*--------------------- END BODY BASE -------------------*/
+
+/*--------------------- FORM -------------------*/
+
+.fieldset {
+  margin: var(--base_spacing-size) 0;
+}
+
+.form-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding-right: 150px;
+  margin-top: 15px;
+}
+
+.field {
+  display: inline-grid;
+}
+
+.green {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--primary-theme);
+  height: 30px;
+  margin-top: 5px;
+}
+
+.check {
+  margin: 3px;
+}
+
+.button {
+  width: 100px;
+  background-color: var(--primary-theme);
+  color: white;
+  padding: 5px;
+  border: 1px solid black;
+}
+.button:hover {
+  background-color: #6c7a00;
+  cursor: pointer;
+}
+
+/*--------------------- END FORM -------------------*/
+
+/*--------------------- TABLE -------------------*/
+.table caption {
+  margin: 10px;
+  text-align: left;
+}
+.table {
+  width: 100%;
+  border-spacing: 0px;
+  margin-bottom: 10px;
+}
+.table th,
+td {
+  height: 40px;
+  border: 0.5px solid black;
+}
+
+.table th {
+  background-color: var(--primary-theme);
+}
+.table td {
+  padding-left: 20px;
+}
+/*--------------------- END TABLE -------------------*/
